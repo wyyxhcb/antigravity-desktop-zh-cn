@@ -1,0 +1,1918 @@
+[
+  {
+    "regex": "^(\\d+)s$",
+    "replacement": "$1 秒"
+  },
+  {
+    "regex": "^(\\d+)m$",
+    "replacement": "$1 分钟"
+  },
+  {
+    "regex": "^(\\d+)h$",
+    "replacement": "$1 小时"
+  },
+  {
+    "regex": "^(\\d+)d$",
+    "replacement": "$1 天"
+  },
+  {
+    "regex": "^(\\d+)w$",
+    "replacement": "$1 周"
+  },
+  {
+    "regex": "^(\\d+)y$",
+    "replacement": "$1 年"
+  },
+  {
+    "regex": "^Open\\ (.{0,500}?)\\ skill$",
+    "replacement": "打开“$1”技能"
+  },
+  {
+    "regex": "^Source\\ (.{0,500}?)$",
+    "replacement": "来源 $1"
+  },
+  {
+    "regex": "^script\\ return\\ value\\ is\\ not\\ JSON\\-serializable:\\ (.{0,500}?)$",
+    "replacement": "脚本返回值无法序列化为 JSON：$1"
+  },
+  {
+    "regex": "^Worker\\ sandbox\\ initialization\\ failed:\\ (.{0,500}?)$",
+    "replacement": "隔离工作线程初始化失败：$1"
+  },
+  {
+    "regex": "^script\\ timed\\ out\\ after\\ (.{0,500}?)ms$",
+    "replacement": "脚本运行 $1 毫秒后超时"
+  },
+  {
+    "regex": "^(.{0,500}?)\\.\\ View\\ site\\ information$",
+    "replacement": "$1。查看网站信息"
+  },
+  {
+    "regex": "^When\\ toggled\\ on,\\ (.{0,500}?)\\ collects\\ usage\\ data\\ to\\ help\\ Google\\ enhance\\ performance\\ and\\ features\\.$",
+    "replacement": "启用后，$1 会收集使用数据，帮助 Google 改进性能和功能。"
+  },
+  {
+    "regex": "^Receive\\ product\\ updates,\\ tips,\\ and\\ promotions\\ from\\ Google\\ (.{0,500}?)\\ via\\ email\\.$",
+    "replacement": "通过电子邮件接收 Google $1 的产品更新、技巧和推广信息。"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ \\(disabled\\ by\\ admin\\)$",
+    "replacement": "$1（管理员已禁用）"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ item\\ (.{0,500}?)$",
+    "replacement": "$1 项目 $2"
+  },
+  {
+    "regex": "^Add\\ new\\ (.{0,500}?)\\ item$",
+    "replacement": "添加新的 $1 项"
+  },
+  {
+    "regex": "^Confirm\\ add\\ (.{0,500}?)\\ item$",
+    "replacement": "确认添加 $1 项"
+  },
+  {
+    "regex": "^Manage\\ (.{0,500}?)\\ app\\ settings\\.$",
+    "replacement": "管理 $1 应用设置。"
+  },
+  {
+    "regex": "^Reset\\ (.{0,500}?)\\ override(.{0,500}?)$",
+    "replacement": "重置 $1 项覆盖设置"
+  },
+  {
+    "regex": "^When\\ toggled\\ on,\\ (.{0,500}?)\\ will\\ use\\ your\\ AI\\ credits\\ to\\ fulfill\\ model\\ requests\\ once\\ you're\\ out\\ of\\ model\\ quota\\.\\ (.{0,500}?)\\ will\\ always\\ use\\ your\\ model\\ quota\\ first\\ before\\ using\\ AI\\ credits\\.$",
+    "replacement": "启用后，模型额度用尽时，$1 会使用你的 AI 点数处理模型请求。$2 会始终优先使用模型额度，再使用 AI 点数。"
+  },
+  {
+    "regex": "^Available\\ AI\\ Credits:\\ (.{0,500}?)$",
+    "replacement": "可用 AI 点数：$1"
+  },
+  {
+    "regex": "^Recording\\ shortcut\\ for\\ (.{0,500}?)\\.\\ Press\\ keys\\ to\\ bind,\\ Enter\\ to\\ save,\\ Escape\\ to\\ cancel\\.$",
+    "replacement": "正在为 $1 设置快捷键。按下要绑定的键，回车保存，Esc 取消。"
+  },
+  {
+    "regex": "^Shortcut\\ (.{0,500}?)\\ for\\ (.{0,500}?)$",
+    "replacement": "$2 的快捷键 $1"
+  },
+  {
+    "regex": "^Remove\\ shortcut\\ (.{0,500}?)\\ for\\ (.{0,500}?)$",
+    "replacement": "移除 $2 的快捷键 $1"
+  },
+  {
+    "regex": "^Add\\ shortcut\\ for\\ (.{0,500}?)$",
+    "replacement": "为 $1 添加快捷键"
+  },
+  {
+    "regex": "^Reset\\ (.{0,500}?)\\ to\\ default$",
+    "replacement": "将 $1 恢复为默认值"
+  },
+  {
+    "regex": "^(.{0,500}?):\\ (.{0,500}?)\\ tokens$",
+    "replacement": "$1：$2 个词元"
+  },
+  {
+    "regex": "^Show\\ (.{0,500}?)\\ breakdown(.{0,500}?)$",
+    "replacement": "显示 $1 的明细 $2"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ tools$",
+    "replacement": "$1 个工具"
+  },
+  {
+    "regex": "^Toggle\\ (.{0,500}?)$",
+    "replacement": "切换 $1"
+  },
+  {
+    "regex": "^(.{0,500}?),\\ voice\\ (.{0,500}?)\\ of\\ (.{0,500}?)$",
+    "replacement": "$1，第 $2 个声音，共 $3 个"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ \\(Experimental\\)$",
+    "replacement": "$1（实验性）"
+  },
+  {
+    "regex": "^Build\\ with\\ (.{0,500}?)\\ Plugins$",
+    "replacement": "使用 $1 插件构建"
+  },
+  {
+    "regex": "^Auth\\ code\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的授权码"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ tool(.{0,500}?)\\ enabled$",
+    "replacement": "已启用 $1 个工具"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ tool(.{0,500}?)\\ disabled$",
+    "replacement": "已停用 $1 个工具"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ (.{0,500}?)\\ tool\\ for\\ (.{0,500}?)$",
+    "replacement": "$3 的 $1 $2 工具"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ project\\ Google3\\ configuration:\\ (.{0,500}?)$",
+    "replacement": "无法保存项目的 Google3 配置：$1"
+  },
+  {
+    "regex": "^Add\\ \\((.{0,500}?)\\)$",
+    "replacement": "添加（$1）"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ project:\\ (.{0,500}?)$",
+    "replacement": "无法保存项目：$1"
+  },
+  {
+    "regex": "^Delete\\ (.{0,500}?)$",
+    "replacement": "删除 $1"
+  },
+  {
+    "regex": "^Failed\\ to\\ delete\\ (.{0,500}?):\\ (.{0,500}?)$",
+    "replacement": "无法删除 $1：$2"
+  },
+  {
+    "regex": "^Duplicate\\ (.{0,500}?)\\ name$",
+    "replacement": "$1 名称重复"
+  },
+  {
+    "regex": "^Cannot\\ add\\ folder:\\ \"(.{0,500}?)\"\\ is\\ not\\ a\\ valid\\ folder\\ location\\.$",
+    "replacement": "无法添加文件夹：“$1”不是有效的文件夹位置。"
+  },
+  {
+    "regex": "^Failed\\ to\\ resolve\\ folder:\\ (.{0,500}?)\\ \\((.{0,500}?)\\)$",
+    "replacement": "无法解析文件夹：$1（$2）"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ project\\ settings:\\ (.{0,500}?)$",
+    "replacement": "无法保存项目设置：$1"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ project\\ permissions:\\ (.{0,500}?)$",
+    "replacement": "无法保存项目权限：$1"
+  },
+  {
+    "regex": "^Edit\\ (.{0,500}?)\\ name$",
+    "replacement": "编辑 $1 名称"
+  },
+  {
+    "regex": "^this\\ (.{0,500}?)$",
+    "replacement": "此 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ Failed$",
+    "replacement": "$1 失败"
+  },
+  {
+    "regex": "^Couldn't\\ (.{0,500}?)\\ conversation$",
+    "replacement": "无法对对话执行 $1"
+  },
+  {
+    "regex": "^Failed\\ to\\ (.{0,500}?)\\ conversation$",
+    "replacement": "无法对对话执行 $1"
+  },
+  {
+    "regex": "^A\\ file\\ already\\ exists\\ at\\ (.{0,500}?)\\.$",
+    "replacement": "$1 处已存在文件。"
+  },
+  {
+    "regex": "^Can’t\\ create\\ this\\ path\\ —\\ “(.{0,500}?)”\\ is\\ a\\ file,\\ not\\ a\\ folder\\.$",
+    "replacement": "无法创建此路径：“$1”是文件，而非文件夹。"
+  },
+  {
+    "regex": "^The\\ folder\\ “(.{0,500}?)”\\ does\\ not\\ exist\\.\\ Would\\ you\\ like\\ to\\ create\\ it\\?$",
+    "replacement": "文件夹“$1”不存在。要创建它吗？"
+  },
+  {
+    "regex": "^“(.{0,500}?)”\\ isn’t\\ a\\ valid\\ folder\\ name\\.$",
+    "replacement": "“$1”不是有效的文件夹名称。"
+  },
+  {
+    "regex": "^Failed\\ to\\ unarchive\\ project:\\ (.{0,500}?)$",
+    "replacement": "无法取消项目归档：$1"
+  },
+  {
+    "regex": "^Failed\\ to\\ select\\ workspace:\\ (.{0,500}?)$",
+    "replacement": "无法选择工作区：$1"
+  },
+  {
+    "regex": "^Go\\ to\\ slide\\ (.{0,500}?)$",
+    "replacement": "转到第 $1 张幻灯片"
+  },
+  {
+    "regex": "^Open\\ conversation\\ (.{0,500}?)$",
+    "replacement": "打开对话 $1"
+  },
+  {
+    "regex": "^Open\\ the\\ (.{0,500}?)\\ plugin$",
+    "replacement": "打开 $1 插件"
+  },
+  {
+    "regex": "^Opens\\ external\\ link:\\ (.{0,500}?)$",
+    "replacement": "打开外部链接：$1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ seconds$",
+    "replacement": "$1 秒"
+  },
+  {
+    "regex": "^Playback\\ speed\\ (.{0,500}?)x$",
+    "replacement": "播放速度 $1 倍"
+  },
+  {
+    "regex": "^Zoom\\ (.{0,500}?)%,\\ reset\\ to\\ fit$",
+    "replacement": "缩放 $1%，重置为适合窗口"
+  },
+  {
+    "regex": "^Error\\ while\\ (.{0,500}?)$",
+    "replacement": "执行 $1 时出错"
+  },
+  {
+    "regex": "^View\\ Diff\\ for\\ (.{0,500}?)$",
+    "replacement": "查看 $1 的差异"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ comments$",
+    "replacement": "$1 条评论"
+  },
+  {
+    "regex": "^Open\\ (.{0,500}?)$",
+    "replacement": "打开 $1"
+  },
+  {
+    "regex": "^Agent\\ needs\\ permission\\ to\\ act\\ on\\ (.{0,500}?)$",
+    "replacement": "智能体需要操作 $1 的权限"
+  },
+  {
+    "regex": "^Submit(.{0,500}?)$",
+    "replacement": "提交 $1"
+  },
+  {
+    "regex": "^Continue(.{0,500}?)$",
+    "replacement": "继续 $1"
+  },
+  {
+    "regex": "^Skip\\ \\((.{0,500}?)\\),\\ Skip\\ All\\ \\((.{0,500}?)\\)$",
+    "replacement": "跳过（$1），全部跳过（$2）"
+  },
+  {
+    "regex": "^Cancel\\ Questionnaire\\ and\\ Stop\\ the\\ Agent\\ \\((.{0,500}?)\\)$",
+    "replacement": "取消问卷并停止智能体（$1）"
+  },
+  {
+    "regex": "^Failed\\ to\\ create\\ project:\\ (.{0,500}?)$",
+    "replacement": "无法创建项目：$1"
+  },
+  {
+    "regex": "^App\\ view\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的应用视图"
+  },
+  {
+    "regex": "^Open\\ URL\\ in\\ system\\ browser:\\ (.{0,500}?)$",
+    "replacement": "在系统浏览器中打开网址：$1"
+  },
+  {
+    "regex": "^Waiting\\ for\\ command\\ completion\\ \\(up\\ to\\ (.{0,500}?)\\ seconds\\)$",
+    "replacement": "等待命令完成（最多 $1 秒）"
+  },
+  {
+    "regex": "^Chunk\\ (.{0,500}?)$",
+    "replacement": "分块 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ terminal:$",
+    "replacement": "$1 终端："
+  },
+  {
+    "regex": "^\\((.{0,500}?)\\ step(.{0,500}?)\\)$",
+    "replacement": "（$1 个步骤）"
+  },
+  {
+    "regex": "^Cost\\ summary:\\ (.{0,500}?)$",
+    "replacement": "费用汇总：$1"
+  },
+  {
+    "regex": "^\\ On\\ top\\ of\\ those\\ defaults,\\ (.{0,500}?)\\ requests\\ the\\ access\\ below\\.$",
+    "replacement": "除默认权限外，$1 还请求以下访问权限。"
+  },
+  {
+    "regex": "^Agents\\ created\\ by\\ this\\ (.{0,500}?)\\ run\\ in\\ a\\ dedicated\\ (.{0,500}?)\\ with\\ its\\ own\\ permissions\\.\\ You\\ can\\ change\\ the\\ permissions\\ in\\ the\\ (.{0,500}?)\\ settings\\ page\\.$",
+    "replacement": "此 $1 创建的智能体会在拥有独立权限的专用 $2 中运行。可以在 $3 设置页修改权限。"
+  },
+  {
+    "regex": "^Enabled\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "已启用“$1”。"
+  },
+  {
+    "regex": "^Started\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "已启动“$1”。"
+  },
+  {
+    "regex": "^Failed\\ to\\ start\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "无法启动“$1”。"
+  },
+  {
+    "regex": "^Restarted\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "已重新启动“$1”。"
+  },
+  {
+    "regex": "^Failed\\ to\\ update\\ \"(.{0,500}?)\"$",
+    "replacement": "无法更新“$1”"
+  },
+  {
+    "regex": "^\\+(.{0,500}?)\\ more$",
+    "replacement": "另有 $1 项"
+  },
+  {
+    "regex": "^Permission:\\ (.{0,500}?)$",
+    "replacement": "权限：$1"
+  },
+  {
+    "regex": "^Unfold\\ lines\\ (.{0,500}?)\\-(.{0,500}?)$",
+    "replacement": "展开第 $1–$2 行"
+  },
+  {
+    "regex": "^Edit\\ comment:\\ (.{0,500}?)$",
+    "replacement": "编辑评论：$1"
+  },
+  {
+    "regex": "^Send\\ all\\ \\((.{0,500}?)\\)$",
+    "replacement": "全部发送（$1）"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ (.{0,500}?)\\ changed$",
+    "replacement": "$1 $2 已更改"
+  },
+  {
+    "regex": "^Install\\ (.{0,500}?)$",
+    "replacement": "安装 $1"
+  },
+  {
+    "regex": "^Install\\ folder\\ \"(.{0,500}?)\"\\ is\\ already\\ in\\ use$",
+    "replacement": "安装文件夹“$1”已被使用"
+  },
+  {
+    "regex": "^Configure\\ (.{0,500}?)$",
+    "replacement": "配置 $1"
+  },
+  {
+    "regex": "^The\\ (.{0,500}?)\\ MCP\\ server\\ requires\\ configuration\\ parameters\\ before\\ it\\ can\\ be\\ started\\.$",
+    "replacement": "$1 MCP 服务器需要配置参数才能启动。"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ accounts$",
+    "replacement": "$1 个账户"
+  },
+  {
+    "regex": "^Make\\ (.{0,500}?)\\ the\\ default\\ (.{0,500}?)\\ account$",
+    "replacement": "将 $1 设为默认 $2 账户"
+  },
+  {
+    "regex": "^Label\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的标签"
+  },
+  {
+    "regex": "^Authorization\\ code\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的授权码"
+  },
+  {
+    "regex": "^Sign\\ in\\ to\\ (.{0,500}?)$",
+    "replacement": "登录 $1"
+  },
+  {
+    "regex": "^No\\ (.{0,500}?)\\ found\\ for$",
+    "replacement": "未找到符合条件的 $1"
+  },
+  {
+    "regex": "^Fix\\ with\\ Agent:\\ (.{0,500}?)$",
+    "replacement": "请智能体修复：$1"
+  },
+  {
+    "regex": "^More\\ actions\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的更多操作"
+  },
+  {
+    "regex": "^Account\\ this\\ MCP\\ server\\ uses:\\ (.{0,500}?)$",
+    "replacement": "此 MCP 服务器使用的账户：$1"
+  },
+  {
+    "regex": "^Reconnect\\ (.{0,500}?)$",
+    "replacement": "重新连接 $1"
+  },
+  {
+    "regex": "^Disconnect\\ (.{0,500}?)$",
+    "replacement": "断开 $1 的连接"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ on\\ this\\ computer$",
+    "replacement": "本机上的 $1"
+  },
+  {
+    "regex": "^Sign\\ in\\ to\\ (.{0,500}?)\\ on\\ this\\ computer$",
+    "replacement": "在本机登录 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ in\\ the\\ cloud$",
+    "replacement": "云端的 $1"
+  },
+  {
+    "regex": "^Sign\\ in\\ to\\ (.{0,500}?)\\ in\\ the\\ cloud$",
+    "replacement": "在云端登录 $1"
+  },
+  {
+    "regex": "^More\\ for\\ (.{0,500}?)$",
+    "replacement": "更多 $1 选项"
+  },
+  {
+    "regex": "^See\\ all\\ \\((.{0,500}?)\\)$",
+    "replacement": "查看全部（$1）"
+  },
+  {
+    "regex": "^Preview\\ unavailable\\ —\\ (.{0,500}?)$",
+    "replacement": "无法预览——$1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ failed$",
+    "replacement": "$1 失败"
+  },
+  {
+    "regex": "^Close\\ (.{0,500}?)$",
+    "replacement": "关闭 $1"
+  },
+  {
+    "regex": "^Move\\ to\\ Group:\\ (.{0,500}?)$",
+    "replacement": "移入分组：$1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ Name$",
+    "replacement": "$1 名称"
+  },
+  {
+    "regex": "^Forked\\ from\\ (.{0,500}?)$",
+    "replacement": "分支来源：$1"
+  },
+  {
+    "regex": "^Where\\ the\\ agent\\ runs,\\ current:\\ (.{0,500}?)$",
+    "replacement": "智能体运行位置，当前：$1"
+  },
+  {
+    "regex": "^Select\\ project,\\ current:\\ (.{0,500}?)$",
+    "replacement": "选择项目，当前：$1"
+  },
+  {
+    "regex": "^No\\ matching\\ (.{0,500}?)$",
+    "replacement": "没有匹配的 $1"
+  },
+  {
+    "regex": "^No\\ cloud\\ (.{0,500}?)$",
+    "replacement": "没有云端 $1"
+  },
+  {
+    "regex": "^Remove\\ context\\ from\\ (.{0,500}?)$",
+    "replacement": "从 $1 移除上下文"
+  },
+  {
+    "regex": "^Select\\ model\\ with\\ (.{0,500}?)$",
+    "replacement": "使用 $1 选择模型"
+  },
+  {
+    "regex": "^Question\\ (.{0,500}?)\\ of\\ (.{0,500}?)$",
+    "replacement": "第 $1 题，共 $2 题"
+  },
+  {
+    "regex": "^Compare\\ responses\\ from\\ (.{0,500}?)\\ models\\ side\\-by\\-side\\ to\\ find\\ the\\ best\\ result\\.$",
+    "replacement": "并排比较 $1 个模型的回答，选择最佳结果。"
+  },
+  {
+    "regex": "^\\+(.{0,500}?)\\ more\\ \\(Show\\ all\\)$",
+    "replacement": "另有 $1 项（显示全部）"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ settings:\\ (.{0,500}?)$",
+    "replacement": "无法保存设置：$1"
+  },
+  {
+    "regex": "^Agent\\ permissions\\ preset\\ selector,\\ current:\\ (.{0,500}?)$",
+    "replacement": "智能体权限预设，当前：$1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\.\\ Starting\\ in\\ local\\ workspace\\.$",
+    "replacement": "$1。将在本地工作区中开始。"
+  },
+  {
+    "regex": "^Using\\ default\\ (.{0,500}?)\\ name$",
+    "replacement": "使用默认的 $1 名称"
+  },
+  {
+    "regex": "^Failed\\ to\\ create\\ (.{0,500}?)$",
+    "replacement": "无法创建 $1"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ project\\ branch:\\ (.{0,500}?)$",
+    "replacement": "无法保存项目分支：$1"
+  },
+  {
+    "regex": "^Select\\ model,\\ current:\\ (.{0,500}?)(.{0,500}?)(.{0,500}?)$",
+    "replacement": "选择模型，当前：$1$2$3"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ ·\\ Context\\ window$",
+    "replacement": "$1 · 上下文窗口"
+  },
+  {
+    "regex": "^Remove\\ (.{0,500}?)$",
+    "replacement": "移除 $1"
+  },
+  {
+    "regex": "^Live\\ chat,\\ (.{0,500}?)$",
+    "replacement": "实时语音对话，$1"
+  },
+  {
+    "regex": "^Select\\ harnesses,\\ current:\\ (.{0,500}?)$",
+    "replacement": "选择运行框架，当前：$1"
+  },
+  {
+    "regex": "^View\\ (.{0,500}?)$",
+    "replacement": "查看 $1"
+  },
+  {
+    "regex": "^Version\\ (.{0,500}?)$",
+    "replacement": "版本 $1"
+  },
+  {
+    "regex": "^Welcome\\ to\\ (.{0,500}?)$",
+    "replacement": "欢迎使用 $1"
+  },
+  {
+    "regex": "^in\\ (.{0,500}?)\\ $",
+    "replacement": "在 $1 中"
+  },
+  {
+    "regex": "^Select\\ (.{0,500}?)\\ Theme$",
+    "replacement": "选择 $1 主题"
+  },
+  {
+    "regex": "^Deleted\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "已删除“$1”。"
+  },
+  {
+    "regex": "^Failed\\ to\\ delete\\ \"(.{0,500}?)\"$",
+    "replacement": "无法删除“$1”"
+  },
+  {
+    "regex": "^Enable\\ (.{0,500}?)$",
+    "replacement": "启用 $1"
+  },
+  {
+    "regex": "^No\\ MCP\\ servers\\ found\\ for\\ \"(.{0,500}?)\"$",
+    "replacement": "未找到与“$1”匹配的 MCP 服务器"
+  },
+  {
+    "regex": "^See\\ (.{0,500}?)\\ more$",
+    "replacement": "再查看 $1 项"
+  },
+  {
+    "regex": "^Filter\\ skills\\ and\\ rules:\\ (.{0,500}?)$",
+    "replacement": "筛选技能和规则：$1"
+  },
+  {
+    "regex": "^Add\\ all\\ ·\\ (.{0,500}?)$",
+    "replacement": "全部添加 · $1"
+  },
+  {
+    "regex": "^Details\\ for\\ (.{0,500}?)$",
+    "replacement": "$1 的详情"
+  },
+  {
+    "regex": "^Plugins\\ in\\ (.{0,500}?)$",
+    "replacement": "$1 中的插件"
+  },
+  {
+    "regex": "^You\\ have\\ (.{0,500}?)\\ conversations\\ in\\ progress\\.\\ Updating\\ will\\ interrupt\\ them,\\ and\\ they\\ will\\ automatically\\ resume\\ once\\ the\\ update\\ completes\\.$",
+    "replacement": "有 $1 个对话正在运行。更新会中断它们，并在更新完成后自动恢复。"
+  },
+  {
+    "regex": "^You\\ have\\ (.{0,500}?)\\ conversations\\ in\\ progress\\.\\ Updating\\ will\\ cancel\\ them\\ and\\ you'll\\ need\\ to\\ manually\\ restart\\ them\\.$",
+    "replacement": "有 $1 个对话正在运行。更新会取消它们，之后需要手动重新启动。"
+  },
+  {
+    "regex": "^Switch\\ environment\\ \\((.{0,500}?)\\)$",
+    "replacement": "切换运行环境（$1）"
+  },
+  {
+    "regex": "^Turn\\ (.{0,500}?)$",
+    "replacement": "第 $1 轮"
+  },
+  {
+    "regex": "^Go\\ to\\ turn\\ (.{0,500}?)\\ of\\ (.{0,500}?)$",
+    "replacement": "转到第 $1 轮，共 $2 轮"
+  },
+  {
+    "regex": "^Turn\\ (.{0,500}?)\\ of\\ (.{0,500}?)$",
+    "replacement": "第 $1 轮，共 $2 轮"
+  },
+  {
+    "regex": "^Error:\\ (.{0,500}?)$",
+    "replacement": "错误：$1"
+  },
+  {
+    "regex": "^Failed\\ to\\ create\\ workspace:\\ (.{0,500}?)$",
+    "replacement": "无法创建工作区：$1"
+  },
+  {
+    "regex": "^Use\\ custom\\ repository:\\ \"(.{0,500}?)\"$",
+    "replacement": "使用自定义仓库：“$1”"
+  },
+  {
+    "regex": "^Unmount\\ workspace\\ (.{0,500}?)$",
+    "replacement": "卸载工作区挂载 $1"
+  },
+  {
+    "regex": "^Remount\\ workspace\\ (.{0,500}?)$",
+    "replacement": "重新挂载工作区 $1"
+  },
+  {
+    "regex": "^Delete\\ workspace\\ (.{0,500}?)$",
+    "replacement": "删除工作区 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ archived$",
+    "replacement": "$1 已归档"
+  },
+  {
+    "regex": "^Failed\\ to\\ archive\\ (.{0,500}?)$",
+    "replacement": "无法归档 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ deleted$",
+    "replacement": "$1 已删除"
+  },
+  {
+    "regex": "^Failed\\ to\\ delete\\ (.{0,500}?)$",
+    "replacement": "无法删除 $1"
+  },
+  {
+    "regex": "^About\\ (.{0,500}?)$",
+    "replacement": "关于 $1"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ \"(.{0,500}?)\"$",
+    "replacement": "无法保存“$1”"
+  },
+  {
+    "regex": "^Enter\\ (.{0,500}?)\\ name\\.\\.\\.$",
+    "replacement": "输入 $1 名称…"
+  },
+  {
+    "regex": "^Created\\ automation\\ \"(.{0,500}?)\"\\.$",
+    "replacement": "已创建自动化“$1”。"
+  },
+  {
+    "regex": "^Failed\\ to\\ create\\ (.{0,500}?)\\.$",
+    "replacement": "无法创建 $1。"
+  },
+  {
+    "regex": "^New\\ (.{0,500}?)$",
+    "replacement": "新建 $1"
+  },
+  {
+    "regex": "^Add\\ (.{0,500}?)$",
+    "replacement": "添加 $1"
+  },
+  {
+    "regex": "^Endpoint\\ (.{0,500}?)\\ not\\ implemented$",
+    "replacement": "尚未实现接口 $1"
+  },
+  {
+    "regex": "^Low\\ contrast\\ ratio\\ \\((.{0,500}?):1\\)\\.\\ Text\\ may\\ be\\ hard\\ to\\ read\\.$",
+    "replacement": "对比度较低（$1:1），文字可能不易阅读。"
+  },
+  {
+    "regex": "^Scroll\\ to:\\ (.{0,500}?)\\ on\\ page\\ (.{0,500}?)$",
+    "replacement": "滚动到第 $2 页的 $1"
+  },
+  {
+    "regex": "^Page\\ (.{0,500}?)\\ failed\\ to\\ load$",
+    "replacement": "第 $1 页加载失败"
+  },
+  {
+    "regex": "^Go\\ to\\ page\\ (.{0,500}?)$",
+    "replacement": "转到第 $1 页"
+  },
+  {
+    "regex": "^View archived in the sidebar\\s*\\((.*?)\\s*menu\\)\\.?$",
+    "replacement": "可在侧边栏查看已归档会话（$1 菜单）。"
+  },
+  {
+    "regex": "^(\\d+)\\s+turns?$",
+    "replacement": "$1 个轮次"
+  },
+  {
+    "regex": "^(?:Turn|turn)\\s+(\\d+)$",
+    "replacement": "第 $1 轮"
+  },
+  {
+    "regex": "^(\\d+)\\s+of\\s+(\\d+)$",
+    "replacement": "第 $1 轮（共 $2 轮）"
+  },
+  {
+    "regex": "^\\((\\d+)\\s+image\\s+attachments?\\)$",
+    "replacement": "($1 个图片附件)"
+  },
+  {
+    "regex": "^(\\d+)\\s+image\\s+attachments?$",
+    "replacement": "$1 个图片附件"
+  },
+  {
+    "regex": "^\\((\\d+)\\s+attachments?\\)$",
+    "replacement": "($1 个附件)"
+  },
+  {
+    "regex": "^(\\d+)\\s+attachments?$",
+    "replacement": "$1 个附件"
+  },
+  {
+    "regex": "^\\((\\d+)\\s+file\\s+attachments?\\)$",
+    "replacement": "($1 个文件附件)"
+  },
+  {
+    "regex": "^(\\d+)\\s+file\\s+attachments?$",
+    "replacement": "$1 个文件附件"
+  },
+  {
+    "regex": "^Search shortcuts\\.{0,3}$",
+    "replacement": "搜索快捷键..."
+  },
+  {
+    "regex": "^Background Commands\\s+(\\d+)\\s*>$",
+    "replacement": "后台命令 $1 >"
+  },
+  {
+    "regex": "^Background Commands\\s+(\\d+)$",
+    "replacement": "后台命令 $1"
+  },
+  {
+    "regex": "^Background Commands\\s*\\((\\d+)\\)$",
+    "replacement": "后台命令 ($1)"
+  },
+  {
+    "regex": "^Search tabs,\\s*files,\\s*(?:extensions,\\s*)?(?:plugins,\\s*)?subagents,\\s*artifacts,\\s*(?:commands|tasks)(?:\\.{0,3})?$",
+    "replacement": "搜索标签页、文件、扩展、子智能体、产物、命令..."
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已思考 $1 小时 $2 分 $3 秒"
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m$",
+    "replacement": "已思考 $1 小时 $2 分钟"
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+)\\s*h$",
+    "replacement": "已思考 $1 小时"
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已思考 $1 分 $2 秒"
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+)\\s*m$",
+    "replacement": "已思考 $1 分钟"
+  },
+  {
+    "regex": "^Thought\\s+for\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已思考 $1 秒"
+  },
+  {
+    "regex": "^See all\\s*\\((\\d+)\\)$",
+    "replacement": "查看全部 ($1)"
+  },
+  {
+    "regex": "^See all\\s+(\\d+)$",
+    "replacement": "查看全部 $1 项"
+  },
+  {
+    "regex": "^\\((\\d+)\\s+subagents?\\)$",
+    "replacement": "($1 个子智能体)"
+  },
+  {
+    "regex": "^(\\d+)\\s+subagents?$",
+    "replacement": "$1 个子智能体"
+  },
+  {
+    "regex": "^(\\d+)\\s+seconds?\\s+ago$",
+    "replacement": "$1 秒前"
+  },
+  {
+    "regex": "^(\\d+)\\s+minutes?\\s+ago$",
+    "replacement": "$1 分钟前"
+  },
+  {
+    "regex": "^(\\d+)\\s+hours?\\s+ago$",
+    "replacement": "$1 小时前"
+  },
+  {
+    "regex": "^(\\d+)\\s+days?\\s+ago$",
+    "replacement": "$1 天前"
+  },
+  {
+    "regex": "^(\\d+)\\s+weeks?\\s+ago$",
+    "replacement": "$1 周前"
+  },
+  {
+    "regex": "^(\\d+)\\s+months?\\s+ago$",
+    "replacement": "$1 个月前"
+  },
+  {
+    "regex": "^(\\d+)\\s+years?\\s+ago$",
+    "replacement": "$1 年前"
+  },
+  {
+    "regex": "^(\\d+)[sS]\\s+ago$",
+    "replacement": "$1 秒前"
+  },
+  {
+    "regex": "^(\\d+)[mM]\\s+ago$",
+    "replacement": "$1 分钟前"
+  },
+  {
+    "regex": "^(\\d+)[hH]\\s+ago$",
+    "replacement": "$1 小时前"
+  },
+  {
+    "regex": "^(\\d+)[dD]\\s+ago$",
+    "replacement": "$1 天前"
+  },
+  {
+    "regex": "^(\\d{1,2}:\\d{2})\\s*\\/\\s*(\\d{1,2}:\\d{2})$",
+    "replacement": "$1 / $2"
+  },
+  {
+    "regex": "^(\\d{1,2}:\\d{2}:\\d{2})\\s*\\/\\s*(\\d{1,2}:\\d{2}:\\d{2})$",
+    "replacement": "$1 / $2"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2})\\s*[-–—]\\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2})$",
+    "replacement": "$1 $2日 - $3 $4日"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2})\\s*[-–—]\\s*(\\d{1,2})$",
+    "replacement": "$1 $2日 - $3日"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2}),\\s*(\\d{4}),\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*(AM|PM)?$",
+    "replacement": "$3年 $1 $2日 $5 $4"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2}),\\s*(\\d{1,2}:\\d{2}(?::\\d{2})?)\\s*(AM|PM)?$",
+    "replacement": "$1 $2日 $4 $3"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2}),\\s*(\\d{4})$",
+    "replacement": "$3年 $1 $2日"
+  },
+  {
+    "regex": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{1,2})$",
+    "replacement": "$1 $2日"
+  },
+  {
+    "regex": "^([\\d\\.]+)% of the customization budget is available\\.$",
+    "replacement": "$1% 的自定义扩展预算可用。"
+  },
+  {
+    "regex": "^Show (\\d+) breakdowns?$",
+    "replacement": "显示 $1 项明细"
+  },
+  {
+    "regex": "^Hide (\\d+) breakdowns?$",
+    "replacement": "隐藏 $1 项明细"
+  },
+  {
+    "regex": "^You have used some of your weekly limit, it will fully refresh in (.+)\\.$",
+    "replacement": "您已消耗了部分每周额度，将在 $1 后完全重置刷新。"
+  },
+  {
+    "regex": "^You have used some of your 5 hour limit, it will fully refresh in (.+)\\.$",
+    "replacement": "您已消耗了部分 5 小时额度，将在 $1 后完全重置刷新。"
+  },
+  {
+    "regex": "^You have hit your 5-hour limit, so the weekly limit does not currently apply\\. Your 5-hour limit will refresh in (.+)\\.$",
+    "replacement": "您已达到 5 小时上限，因此每周额度当前不适用。您的 5 小时额度将在 $1 后重置刷新。"
+  },
+  {
+    "regex": "^You have hit your 5-hour limit, it will refresh in (.+)\\. If on a supported paid plan, you can use AI credits in the interim\\.$",
+    "replacement": "您已达到 5 小时上限，将在 $1 后重置刷新。如果使用的是支持的付费套餐，您可以在此期间使用 AI 积分。"
+  },
+  {
+    "regex": "^(\\d+) files? changed$",
+    "replacement": "$1 个文件已修改"
+  },
+  {
+    "regex": "^(\\d+) insertions?\\(\\+\\)$",
+    "replacement": "$1 行新增(+)"
+  },
+  {
+    "regex": "^(\\d+) deletions?\\(-\\)$",
+    "replacement": "$1 行删除(-)"
+  },
+  {
+    "regex": "^Step (\\d+) of (\\d+)$",
+    "replacement": "第 $1 步（共 $2 步）"
+  },
+  {
+    "regex": "^Task (\\d+) running$",
+    "replacement": "正在运行任务 $1"
+  },
+  {
+    "regex": "^Saved at (\\d{1,2}:\\d{2}(?::\\d{2})?)$",
+    "replacement": "已于 $1 保存"
+  },
+  {
+    "regex": "^(\\d+) active subagents?$",
+    "replacement": "$1 个运行中的子智能体"
+  },
+  {
+    "regex": "^Created (\\d+) files?$",
+    "replacement": "已创建 $1 个文件"
+  },
+  {
+    "regex": "^Modified (\\d+) files?$",
+    "replacement": "已修改 $1 个文件"
+  },
+  {
+    "regex": "^Thinking for (\\d+)s$",
+    "replacement": "已思考 $1 秒"
+  },
+  {
+    "regex": "^Stopped after (\\d+) steps?$",
+    "replacement": "已在 $1 步后停止"
+  },
+  {
+    "regex": "^(\\d+(?:\\.\\d+)?)% of the customization budget is available\\.?$",
+    "replacement": "$1% 的自定义扩展预算可用。"
+  },
+  {
+    "regex": "^\\+\\s*Add Folder$",
+    "replacement": "+ 添加文件夹"
+  },
+  {
+    "regex": "^Permanently delete (.*?)\\.?$",
+    "replacement": "永久删除 $1。"
+  },
+  {
+    "regex": "^快捷键\\s*for quick navigation and control\\.?$",
+    "replacement": "快捷键，用于快速导航和操作控制。"
+  },
+  {
+    "regex": "^(?:Shortcuts\\s+)?for quick navigation and control\\.?$",
+    "replacement": "用于快速导航和操作控制。"
+  },
+  {
+    "regex": "^(?:LAYOUT|Layout)\\s+CONTROLS$",
+    "replacement": "布局控制"
+  },
+  {
+    "regex": "^(Enter|Alt\\+Enter|Shift\\+Enter|Ctrl\\+Enter|Cmd\\+Enter)\\s+Queues after the turn$",
+    "replacement": "$1 轮次结束后进入排队"
+  },
+  {
+    "regex": "^(Enter|Alt\\+Enter|Shift\\+Enter|Ctrl\\+Enter|Cmd\\+Enter)\\s+Sends immediately$",
+    "replacement": "$1 立即发送"
+  },
+  {
+    "regex": "^(Enter|Alt\\+Enter|Shift\\+Enter|Ctrl\\+Enter|Cmd\\+Enter)\\s+On empty prompt,\\s*sends next in queue$",
+    "replacement": "$1 在输入框为空时发送队列中的下一条消息"
+  },
+  {
+    "regex": "^On empty prompt,\\s*sends next in queue$",
+    "replacement": "在输入框为空时发送队列中的下一条消息"
+  },
+  {
+    "regex": "^Queues after the turn$",
+    "replacement": "轮次结束后进入排队"
+  },
+  {
+    "regex": "^Sends immediately$",
+    "replacement": "立即发送"
+  },
+  {
+    "regex": "^Models\\s+within\\s+this\\s+group:?\\s*(.*)$",
+    "replacement": "该分组包含的模型：$1"
+  },
+  {
+    "regex": "^Inherits\\s+your\\s+General\\s+settings\\s*在此项目中工作时[。.]?$",
+    "replacement": "在此项目中工作时，继承您的“通用”设置。"
+  },
+  {
+    "regex": "^Inherits\\s+(?:your\\s+)?(?:General|default)\\s+settings[。.]?$",
+    "replacement": "继承您的“通用”设置。"
+  },
+  {
+    "regex": "^Sends\\s+after\\s+agent\\s+finishes\\s+working[。.]?$",
+    "replacement": "智能体结束工作后发送"
+  },
+  {
+    "regex": "^Send\\s+Now$",
+    "replacement": "立即发送"
+  },
+  {
+    "regex": "^Select\\s+Project(\\s+(?:Ctrl|Cmd|Alt|Shift)\\+[\\w;:,\\/\\+\\-]+)?$",
+    "replacement": "选择项目$1"
+  },
+  {
+    "regex": "^Select\\s+Model(\\s+(?:Ctrl|Cmd|Alt|Shift)\\+[\\w;:,\\/\\+\\-]+)?$",
+    "replacement": "选择模型$1"
+  },
+  {
+    "regex": "^No\\s+Project$",
+    "replacement": "无项目关联"
+  },
+  {
+    "regex": "^Quick\\s+Start$",
+    "replacement": "快速入门"
+  },
+  {
+    "regex": "^Copy\\s+项目名称$",
+    "replacement": "复制项目名称"
+  },
+  {
+    "regex": "^Copy\\s+Project\\s+Name$",
+    "replacement": "复制项目名称"
+  },
+  {
+    "regex": "^Cancel\\s*\\(((?:Ctrl|Cmd|Alt|Shift)\\+[\\w\\+\\-]+)\\)$",
+    "replacement": "取消 ($1)"
+  },
+  {
+    "regex": "^Pin$",
+    "replacement": "置顶"
+  },
+  {
+    "regex": "^Unpin$",
+    "replacement": "取消置顶"
+  },
+  {
+    "regex": "^Good\\s+response$",
+    "replacement": "优质回答"
+  },
+  {
+    "regex": "^Bad\\s+response$",
+    "replacement": "不佳回答"
+  },
+  {
+    "regex": "^Mark\\s+Unread$",
+    "replacement": "标记为未读"
+  },
+  {
+    "regex": "^Mark\\s+Read$",
+    "replacement": "标记为已读"
+  },
+  {
+    "regex": "^Copy\\s+Command$",
+    "replacement": "复制命令"
+  },
+  {
+    "regex": "^(\\d+)\\s+tasks?\\s+running$",
+    "replacement": "$1 个运行中的任务"
+  },
+  {
+    "regex": "^Ran\\s+(.*)$",
+    "replacement": "运行 $1"
+  },
+  {
+    "regex": "^Explored\\s+(\\d+)\\s+files?$",
+    "replacement": "已浏览探索 $1 个文件"
+  },
+  {
+    "regex": "^Explored\\s+(.*)$",
+    "replacement": "已浏览探索 $1"
+  },
+  {
+    "regex": "^Edited\\s+(.*)$",
+    "replacement": "已编辑 $1"
+  },
+  {
+    "regex": "^Viewed\\s+(.*)$",
+    "replacement": "已查看 $1"
+  },
+  {
+    "regex": "^Ran\\s+(\\d+)\\s+commands?$",
+    "replacement": "已运行 $1 个命令"
+  },
+  {
+    "regex": "^Explored\\s+(\\d+)\\s+tasks?$",
+    "replacement": "已查看 $1 个任务"
+  },
+  {
+    "regex": "^Timed\\s+(\\d+)\\s+seconds?$",
+    "replacement": "已计时 $1 秒"
+  },
+  {
+    "regex": "^Timed\\s+(\\d+)\\s+minutes?$",
+    "replacement": "已计时 $1 分钟"
+  },
+  {
+    "regex": "^Outside\\s+of\\s+Project$",
+    "replacement": "项目外"
+  },
+  {
+    "regex": "^Inside\\s+of\\s+Project$",
+    "replacement": "项目内"
+  },
+  {
+    "regex": "^Updated\\s+(.*)$",
+    "replacement": "更新于 $1"
+  },
+  {
+    "regex": "^Created\\s+(?!worker\\b)(.*)$",
+    "replacement": "创建于 $1"
+  },
+  {
+    "regex": "^Tool\\s+Permissions$",
+    "replacement": "工具权限"
+  },
+  {
+    "regex": "^Controls\\s+the\\s+actions\\s+the\\s+agent\\s+can\\s+take[。.]?$",
+    "replacement": "控制智能体可以执行的操作。"
+  },
+  {
+    "regex": "^Whether\\s+the\\s+agent\\s+asks\\s+you\\s+to\\s+review\\s+its\\s+documents[。.]?$",
+    "replacement": "智能体在创建产物文档时是否请求您审查。"
+  },
+  {
+    "regex": "^Browser\\s+settings\\s+have\\s+moved$",
+    "replacement": "浏览器设置已迁移"
+  },
+  {
+    "regex": "^Go\\s+to\\s+General\\s+settings$",
+    "replacement": "前往通用设置"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已运行 $1 小时 $2 分 $3 秒"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m$",
+    "replacement": "已运行 $1 小时 $2 分钟"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*h$",
+    "replacement": "已运行 $1 小时"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已运行 $1 分 $2 秒"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*m$",
+    "replacement": "已运行 $1 分钟"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "已运行 $1 秒"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "在 $1 小时 $2 分 $3 秒后停止"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m$",
+    "replacement": "在 $1 小时 $2 分钟后停止"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*h$",
+    "replacement": "在 $1 小时后停止"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*m\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "在 $1 分 $2 秒后停止"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*m$",
+    "replacement": "在 $1 分钟后停止"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+(?:\\.\\d+)?)\\s*s$",
+    "replacement": "在 $1 秒后停止"
+  },
+  {
+    "regex": "^Message\\s+from\\s+(.+)$",
+    "replacement": "来自 $1 的消息"
+  },
+  {
+    "regex": "^Executing\\s+task:\\s+(.+)$",
+    "replacement": "正在执行任务: $1"
+  },
+  {
+    "regex": "^Record Audio(\\s+Ctrl\\+[A-Za-z])$",
+    "replacement": "录制音频$1"
+  },
+  {
+    "regex": "^Create\\s+(?:New\\s+)?Project$",
+    "replacement": "新建项目"
+  },
+  {
+    "regex": "^New Terminal(\\s+Ctrl\\+Shift\\+.*?)$",
+    "replacement": "新建终端$1"
+  },
+  {
+    "regex": "^Add Terminal(\\s+Ctrl\\+Shift\\+.*?)$",
+    "replacement": "添加终端$1"
+  },
+  {
+    "regex": "^Add Context(\\s+.*)$",
+    "replacement": "添加上下文$1"
+  },
+  {
+    "regex": "^(\\d+)\\s+agents?\\s+running$",
+    "replacement": "$1 个运行中的智能体"
+  },
+  {
+    "regex": "^(?:继承您的全局权限|Inherits\\s+your\\s+(?:Global\\s+Permissions|global\\s+permissions))[\\s,，]*(?:when\\s+working\\s+in\\s+this\\s+project|在此项目中工作时)[。.]?$",
+    "replacement": "在此项目中工作时，继承您的全局权限。"
+  },
+  {
+    "regex": "^Inherits\\s+your\\s+(?:Global\\s+Permissions|global\\s+permissions)[。.]?$",
+    "replacement": "继承您的全局权限。"
+  },
+  {
+    "regex": "^(?:Also\\s+includes|也包含)[\\s,，]*(?:Global\\s+Permissions|global\\s+permissions|全局权限)[\\s,，]*(?:when\\s+working\\s+in\\s+this\\s+project|在此项目中工作时)[。.]?\\s*(?:Learn\\s+more|了解更多)[。.]?$",
+    "replacement": "在此项目中工作时也包含全局权限。了解更多。"
+  },
+  {
+    "regex": "^(?:Also\\s+includes|也包含)[\\s,，]*(?:Global\\s+Permissions|global\\s+permissions|全局权限)[\\s,，]*(?:when\\s+working\\s+in\\s+this\\s+project|在此项目中工作时)[。.]?$",
+    "replacement": "在此项目中工作时也包含全局权限。"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:d|days?)[,\\s]+(\\d+)\\s*(?:h|hours?)[,\\s]+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 天 $2 小时 $3 分钟后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:d|days?)[,\\s]+(\\d+)\\s*(?:h|hours?)[。.]?$",
+    "replacement": "$1 天 $2 小时后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:h|hours?)[,\\s]+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 小时 $2 分钟后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:m|mins?|minutes?)[,\\s]+(\\d+)\\s*(?:s|secs?|seconds?)[。.]?$",
+    "replacement": "$1 分 $2 秒后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:d|days?)[。.]?$",
+    "replacement": "$1 天后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:h|hours?)[。.]?$",
+    "replacement": "$1 小时后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 分钟后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+(\\d+)\\s*(?:s|secs?|seconds?)[。.]?$",
+    "replacement": "$1 秒后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+less\\s+than\\s+a\\s+minute[。.]?$",
+    "replacement": "不到 1 分钟后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+in\\s+a\\s+few\\s+seconds[。.]?$",
+    "replacement": "几秒后重置"
+  },
+  {
+    "regex": "^[Rr]esets?\\s+soon[。.]?$",
+    "replacement": "即将重置"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:d|days?)[,\\s]+(\\d+)\\s*(?:h|hours?)[,\\s]+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 天 $2 小时 $3 分钟后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:d|days?)[,\\s]+(\\d+)\\s*(?:h|hours?)[。.]?$",
+    "replacement": "$1 天 $2 小时后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:h|hours?)[,\\s]+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 小时 $2 分钟后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:m|mins?|minutes?)[,\\s]+(\\d+)\\s*(?:s|secs?|seconds?)[。.]?$",
+    "replacement": "$1 分 $2 秒后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:d|days?)[。.]?$",
+    "replacement": "$1 天后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:h|hours?)[。.]?$",
+    "replacement": "$1 小时后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:m|mins?|minutes?)[。.]?$",
+    "replacement": "$1 分钟后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+in\\s+(\\d+)\\s*(?:s|secs?|seconds?)[。.]?$",
+    "replacement": "$1 秒后重置刷新"
+  },
+  {
+    "regex": "^[Rr]efreshes?\\s+soon[。.]?$",
+    "replacement": "即将重置刷新"
+  },
+  {
+    "regex": "^(?:All|全部)\\s+scheduled\\s+tasks\\s+run\\s+as\\s+(.+?)[。.]?$",
+    "replacement": "所有定时任务均以 $1 模型运行。"
+  },
+  {
+    "regex": "^scheduled\\s+tasks\\s+run\\s+as\\s+(.+?)[。.]?$",
+    "replacement": "定时任务均以 $1 模型运行。"
+  },
+  {
+    "regex": "^Search\\s+tasks[\\.…]*$",
+    "replacement": "搜索任务..."
+  },
+  {
+    "regex": "^Search\\s+conversations[\\.…]*$",
+    "replacement": "搜索会话..."
+  },
+  {
+    "regex": "^Enter\\s+scheduled\\s+task\\s+name[\\.…]*$",
+    "replacement": "输入定时任务名称..."
+  },
+  {
+    "regex": "^Enter\\s+a\\s+prompt\\s+for\\s+the\\s+agent\\s+to\\s+run[\\.…]*$",
+    "replacement": "输入供智能体执行的提示词..."
+  },
+  {
+    "regex": "^Undo\\s+to\\s+(?:this\\s+point|here)[。.]?$",
+    "replacement": "撤销到此处"
+  },
+  {
+    "regex": "^Failed\\s+to\\s+revalidate\\s+slash\\s+commands:[\\s]*(.*)$",
+    "replacement": "重新验证斜杠命令失败：$1"
+  },
+  {
+    "regex": "^Failed\\s+to\\s+add\\s+plugin[。.]?\\s*(?:Please\\s+try\\s+again[。.]?)?$",
+    "replacement": "添加插件失败。请重试。"
+  },
+  {
+    "regex": "^(?:All|全部)\\s+scheduled\\s+tasks?\\s+run\\s+as\\s+(.+?)[。.]?$",
+    "replacement": "所有定时任务均以 $1 模型运行。"
+  },
+  {
+    "regex": "^(?:All|全部)\\s+plugins?\\s+run\\s+as\\s+(.+?)[。.]?$",
+    "replacement": "所有插件均以 $1 模型运行。"
+  },
+  {
+    "regex": "^(?:All|全部)\\s+automations?\\s+run\\s+as\\s+(.+?)[。.]?$",
+    "replacement": "所有自动化任务均以 $1 模型运行。"
+  },
+  {
+    "regex": "^Mark\\s+all\\s+(\\d+)\\s+conversations\\s+as\\s+read$",
+    "replacement": "将全部 $1 个会话标记为已读"
+  },
+  {
+    "regex": "^Mark\\s+(\\d+)\\s+conversations?\\s+as\\s+read$",
+    "replacement": "将 $1 个会话标记为已读"
+  },
+  {
+    "regex": "^Are\\s+you\\s+sure\\s+you\\s+want\\s+to\\s+mark\\s+all\\s+(\\d+)\\s+conversations\\s+as\\s+read\\?\\s+This\\s+action\\s+cannot\\s+be\\s+undone\\.?$",
+    "replacement": "您确定要将全部 $1 个会话标记为已读吗？此操作无法撤销。"
+  },
+  {
+    "regex": "^Are\\s+you\\s+sure\\s+you\\s+want\\s+to\\s+mark\\s+(\\d+)\\s+conversations?\\s+as\\s+read\\?\\s+This\\s+action\\s+cannot\\s+be\\s+undone\\.?$",
+    "replacement": "您确定要将 $1 个会话标记为已读吗？此操作无法撤销。"
+  },
+  {
+    "regex": "^(\\d+)\\s+active\\s+conversations?$",
+    "replacement": "$1 个活跃会话"
+  },
+  {
+    "regex": "^(\\d+)\\s+archived\\s+conversations?$",
+    "replacement": "$1 个已归档会话"
+  },
+  {
+    "regex": "^Try\\s+(?:远程控制|Remote Control)$",
+    "replacement": "体验远程控制"
+  },
+  {
+    "regex": "^(\\d+)\\s+tools?\\s+enabled$",
+    "replacement": "已启用 $1 个工具"
+  },
+  {
+    "regex": "^Plugin:\\s*(.*)$",
+    "replacement": "插件: $1"
+  },
+  {
+    "regex": "^This plugin provides a specialized suite of skills for data engineers.*$",
+    "replacement": "此插件为在 Google Cloud 上工作的数据工程师和数据库从业者提供专业技能套件。它充当专家助手，让您轻松与数据库交互、分析数据并优化数据库工作负载。"
+  },
+  {
+    "regex": "^Build applications with the Gemini Interactions API.*$",
+    "replacement": "使用 Gemini Interactions API 和 Live API 构建应用，包括文本生成、多轮对话、流式传输、函数调用、托管智能体以及实时音视频。"
+  },
+  {
+    "regex": "^Kick off work on your computer and continue working with your agents from your phone or another device\\.\\s*Turn on (?:远程控制|Remote Control) in app settings\\.?$",
+    "replacement": "在您的计算机上开启工作，并通过手机或其他设备继续与您的智能体协同。可在应用设置中开启远程控制。"
+  },
+  {
+    "regex": "^Build with (.+) Plugins$",
+    "replacement": "Build with $1 插件目录"
+  },
+  {
+    "regex": "^Plugins are packaged collections of skills and MCPs to help the Agent in (.+?) work with Google developer products\\.\\s*You can always change your choices in Settings\\.?$",
+    "replacement": "插件是技能与 MCP 的打包集合，用于辅助 $1 中的智能体协同使用 Google 开发者产品。您随时可以在“设置”中更改选择。"
+  },
+  {
+    "regex": "^Plugins are packaged collections of skills and MCPs to help the Agent work with Google developer products\\.\\s*You can always change your choices in Settings\\.?$",
+    "replacement": "插件是技能与 MCP 的打包集合，用于辅助智能体协同使用 Google 开发者产品。您随时可以在“设置”中更改选择。"
+  },
+  {
+    "regex": "^There are currently no Build with (.+) plugins available\\.?$",
+    "replacement": "当前暂无可用的 Build with $1 插件。"
+  },
+  {
+    "regex": "^Specialized suite of skills for data engineers and database practitioners (?:working )?on Google Cloud\\.?$",
+    "replacement": "专为 Google Cloud 上的数据工程师与数据库从业者打造的专业技能套件。"
+  },
+  {
+    "regex": "^(\\d+)\\s+tools?\\s+disabled$",
+    "replacement": "已禁用 $1 个工具"
+  },
+  {
+    "regex": "^Disable\\s+(.+)\\s+tool\\s+for\\s+(.+)$",
+    "replacement": "为 $2 禁用 $1 工具"
+  },
+  {
+    "regex": "^Enable\\s+(.+)\\s+tool\\s+for\\s+(.+)$",
+    "replacement": "为 $2 启用 $1 工具"
+  },
+  {
+    "regex": "^Auth code for (.+)$",
+    "replacement": "$1 的授权码"
+  },
+  {
+    "regex": "^The (.+) MCP server requires configuration parameters before it can be started\\.?$",
+    "replacement": "$1 MCP 服务需要先配置参数才能启动。"
+  },
+  {
+    "regex": "^See more in (.+)$",
+    "replacement": "在 $1 中查看更多"
+  },
+  {
+    "regex": "^(?:See less|收起) in (.+)$",
+    "replacement": "在 $1 中收起"
+  },
+  {
+    "regex": "^(?:More actions|更多操作) for (.+)$",
+    "replacement": "$1 的更多操作"
+  },
+  {
+    "regex": "^Failed to enable plugin (.+)$",
+    "replacement": "启用插件 $1 失败"
+  },
+  {
+    "regex": "^Failed to update agent:\\s*(.+)$",
+    "replacement": "更新智能体失败：$1"
+  },
+  {
+    "regex": "^Failed to remove agent:\\s*(.+)$",
+    "replacement": "移除智能体失败：$1"
+  },
+  {
+    "regex": "^Failed to remove plugin:\\s*(.+)$",
+    "replacement": "移除插件失败：$1"
+  },
+  {
+    "regex": "^Failed to toggle plugin:\\s*(.+)$",
+    "replacement": "切换插件状态失败：$1"
+  },
+  {
+    "regex": "^Error updating agent:\\s*(.+)$",
+    "replacement": "更新智能体出错：$1"
+  },
+  {
+    "regex": "^Failed to write MCP config:\\s*(.+)$",
+    "replacement": "写入 MCP 配置失败：$1"
+  },
+  {
+    "regex": "^Unnamed [Aa]gent (\\d+)$",
+    "replacement": "未命名智能体 $1"
+  },
+  {
+    "regex": "^Unnamed [Ss]kill (\\d+)$",
+    "replacement": "未命名技能 $1"
+  },
+  {
+    "regex": "^UI Extension (\\d+)$",
+    "replacement": "界面扩展 $1"
+  },
+  {
+    "regex": "^Automation (\\d+)$",
+    "replacement": "自动化任务 $1"
+  },
+  {
+    "regex": "^Rule (\\d+)$",
+    "replacement": "规则 $1"
+  },
+  {
+    "regex": "^Show (\\d+) breakdowns?$",
+    "replacement": "显示 $1 项明细"
+  },
+  {
+    "regex": "^(.+),\\s*setup required$",
+    "replacement": "$1（需要配置）"
+  },
+  {
+    "regex": "^Your\\s+plan's\\s+baseline\\s+quota\\s+will\\s+refresh\\s+on\\s+(.+?)\\.\\s+You\\s+can\\s+upgrade\\s+to\\s+a\\s+Google\\s+AI\\s+Ultra\\s+plan\\s+to\\s+receive\\s+higher\\s+rate\\s+limits[。.]?$",
+    "replacement": "您的套餐基础配额将于 $1 重置刷新。您可以升级至 Google AI Ultra 以获取更高的请求配额与速率上限。"
+  },
+  {
+    "regex": "^Your\\s+plan's\\s+baseline\\s+quota\\s+will\\s+refresh\\s+on\\s+(.+?)\\.\\s+To\\s+continue\\s+using\\s+this\\s+model\\s+now,\\s*enable\\s+AI\\s+Credit\\s+overages[。.]?$",
+    "replacement": "您的套餐基础配额将于 $1 重置刷新。若要立即继续使用此模型，请启用超额 AI 积分计费。"
+  },
+  {
+    "regex": "^Your\\s+plan's\\s+baseline\\s+quota\\s+will\\s+refresh\\s+on\\s+([^.。]+)[。.]?$",
+    "replacement": "您的套餐基础配额将于 $1 重置刷新。"
+  },
+  {
+    "regex": "^(?:Model|Your)\\s+quota\\s+will\\s+refresh\\s+on\\s+([^.。]+)[。.]?$",
+    "replacement": "您的模型配额将于 $1 重置刷新。"
+  },
+  {
+    "regex": "^You\\s+need\\s+at\\s+least\\s+(\\d+)\\s+AI\\s+Credits\\s+to\\s+send\\s+messages[。.]?$",
+    "replacement": "您至少需要 $1 点 AI 积分才能发送消息。"
+  },
+  {
+    "regex": "^To\\s+continue\\s+using\\s+this\\s+model\\s+now,\\s*purchase\\s+more\\s+AI\\s+Credits[。.]?$",
+    "replacement": "若要立即继续使用此模型，请购买更多 AI 积分。"
+  },
+  {
+    "regex": "^To\\s+continue\\s+using\\s+this\\s+model\\s+now,\\s*enable\\s+AI\\s+Credit\\s+overages[。.]?$",
+    "replacement": "若要立即继续使用此模型，请启用超额 AI 积分计费。"
+  },
+  {
+    "regex": "^To\\s+continue\\s+using\\s+(.+?)\\s+now,\\s*purchase\\s+more\\s+AI\\s+Credits[。.]?$",
+    "replacement": "若要立即继续使用 $1，请购买更多 AI 积分。"
+  },
+  {
+    "regex": "^To\\s+continue\\s+using\\s+(.+?)\\s+now,\\s*enable\\s+AI\\s+Credit\\s+overages[。.]?$",
+    "replacement": "若要立即继续使用 $1，请启用超额 AI 积分计费。"
+  },
+  {
+    "regex": "^Available\\s+AI\\s+Credits:\\s*(.+)$",
+    "replacement": "可用 AI 积分：$1"
+  },
+  {
+    "regex": "^Shared\\s+with:\\s*(.+)$",
+    "replacement": "共享模型：$1"
+  },
+  {
+    "regex": "^Your\\s+Plan:\\s*(.+)$",
+    "replacement": "当前方案：$1"
+  },
+  {
+    "regex": "^(\\d+)\\s+models\\s+selected$",
+    "replacement": "已选择 $1 个模型"
+  },
+  {
+    "regex": "^Select\\s+model,\\s*current:\\s*(.+)$",
+    "replacement": "选择模型，当前：$1"
+  },
+  {
+    "regex": "^You have (\\d+) conversations in progress\\. Updating will interrupt them, and they will automatically resume once the update completes\\.$",
+    "replacement": "您当前有 $1 个正在进行的会话。更新将暂时中断这些会话，并在更新完成后自动恢复。"
+  },
+  {
+    "regex": "^You have (\\d+) conversations in progress\\. Updating will cancel them and you'll need to manually restart them\\.$",
+    "replacement": "您当前有 $1 个正在进行的会话。更新将取消这些会话，更新后您需要手动重新开始。"
+  },
+  {
+    "regex": "^Set up (.+)$",
+    "replacement": "设置 $1"
+  },
+  {
+    "regex": "^Review permissions for (.+)$",
+    "replacement": "审查 $1 的权限"
+  },
+  {
+    "regex": "^(.+) needs a few details from you before it can run\\.$",
+    "replacement": "$1 运行前需要您补充几项详细信息。"
+  },
+  {
+    "regex": "^Agents created by (.+) run in a dedicated (?:project|workspace) with its own permissions, which you can change anytime in the (?:project|workspace) settings page\\. On top of those defaults, (.+) requests the access below\\.$",
+    "replacement": "由 $1 创建的智能体将在专属工作区中运行并拥有独立权限，您可以随时在设置页面中更改。除默认权限外，$2 还请求以下访问权限。"
+  },
+  {
+    "regex": "^Agents created by (.+) run in a dedicated (?:project|workspace) with its own permissions, which you can change anytime in the (?:project|workspace) settings page\\.$",
+    "replacement": "由 $1 创建的智能体将在专属工作区中运行并拥有独立权限，您可以随时在设置页面中更改。"
+  },
+  {
+    "regex": "^On top of those defaults, (.+) requests the access below\\.$",
+    "replacement": "除默认权限外，$1 还请求以下访问权限。"
+  },
+  {
+    "regex": "^Failed to load skills:\\s*(.+)$",
+    "replacement": "加载技能失败：$1"
+  },
+  {
+    "regex": "^Failed to scan skills config file:\\s*(.+)$",
+    "replacement": "扫描技能配置文件失败：$1"
+  },
+  {
+    "regex": "^Failed to load page (\\d+):\\s*(.+)$",
+    "replacement": "加载第 $1 页失败：$2"
+  },
+  {
+    "regex": "^Failed to load text layer for page (\\d+):\\s*(.+)$",
+    "replacement": "加载第 $1 页的文本图层失败：$2"
+  },
+  {
+    "regex": "^Text layer render failed:\\s*(.+)$",
+    "replacement": "文本图层渲染失败：$1"
+  },
+  {
+    "regex": "^Failed to initialize text layer:\\s*(.+)$",
+    "replacement": "初始化文本图层失败：$1"
+  },
+  {
+    "regex": "^Tool Definition:\\s*(.+)$",
+    "replacement": "工具定义：$1"
+  },
+  {
+    "regex": "^Invocation:\\s*(.+)$",
+    "replacement": "调用：$1"
+  },
+  {
+    "regex": "^Agent permissions preset selector, current:\\s*(.+)$",
+    "replacement": "智能体权限预设选择器，当前：$1"
+  },
+  {
+    "regex": "^([\\d,]+)\\s*\\/\\s*([\\d,]+)\\s*tokens\\s*\\(([\\d.]+%)\\)$",
+    "replacement": "$1 / $2 个 Token ($3)"
+  },
+  {
+    "regex": "^\\(([\\d,]+)\\s*tokens\\)\\s*([\\d.]+%)$",
+    "replacement": "($1 个 Token) $2"
+  },
+  {
+    "regex": "^\\(([\\d,]+)\\s*tokens\\)$",
+    "replacement": "($1 个 Token)"
+  },
+  {
+    "regex": "^Unused capacity:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "未用容量：$1 个 Token"
+  },
+  {
+    "regex": "^Rules:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "规则：$1 个 Token"
+  },
+  {
+    "regex": "^Skills:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "技能：$1 个 Token"
+  },
+  {
+    "regex": "^Subagents:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "子智能体：$1 个 Token"
+  },
+  {
+    "regex": "^MCP Tools:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "MCP 工具：$1 个 Token"
+  },
+  {
+    "regex": "^MCP Servers:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "MCP 服务：$1 个 Token"
+  },
+  {
+    "regex": "^System Prompt:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "系统提示词：$1 个 Token"
+  },
+  {
+    "regex": "^Customizations:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "自定义扩展：$1 个 Token"
+  },
+  {
+    "regex": "^Other Customizations:\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "其他自定义扩展：$1 个 Token"
+  },
+  {
+    "regex": "^(.+):\\s*([\\d,]+)\\s*tokens$",
+    "replacement": "$1：$2 个 Token"
+  },
+  {
+    "regex": "^(\\d+)\\s+demoted$",
+    "replacement": "$1 项已降级"
+  },
+  {
+    "regex": "^(\\d+)\\s+excluded$",
+    "replacement": "$1 项已排除"
+  },
+  {
+    "regex": "^(\\d+)\\s+tools?\\s+excluded$",
+    "replacement": "已排除 $1 个工具"
+  },
+  {
+    "regex": "^(\\d+)\\s+tools$",
+    "replacement": "$1 个工具"
+  },
+  {
+    "regex": "^Show\\s+(\\d+)\\s+breakdowns?$",
+    "replacement": "显示 $1 项明细"
+  },
+  {
+    "regex": "^(\\d+)\\s+rules?\\s+exceeded the rules budget and (?:was|were) demoted from full inline content to a file-path pointer\\.$",
+    "replacement": "$1 条规则超出规则预算，已从完整内联内容降级为文件路径指针。"
+  },
+  {
+    "regex": "^(\\d+)\\s+items?\\s+in\\s+(.+?)\\s+exceeded the customization budget and (?:was|were) excluded from context\\.$",
+    "replacement": "$2 中的 $1 个项目超出自定义扩展预算，已从上下文中排除。"
+  },
+  {
+    "regex": "^Exceeded the rules token budget\\. Full rule content \\(([\\d,]+)\\s*tokens\\) was replaced with a lightweight file-path pointer in context\\.$",
+    "replacement": "已超出规则 Token 预算。完整规则内容（$1 个 Token）已在上下文中替换为轻量级文件路径指针。"
+  },
+  {
+    "regex": "^All tools in this MCP server \\(([\\d,]+)\\s*tokens\\) exceeded the customization budget and were excluded from context\\.$",
+    "replacement": "此 MCP 服务中的所有工具（$1 个 Token）均超出自定义扩展预算，已从上下文中排除。"
+  },
+  {
+    "regex": "^(\\d+)\\s+tools?\\s+in this MCP server \\(([\\d,]+)\\s*tokens\\) exceeded the customization budget and were excluded from context\\.$",
+    "replacement": "此 MCP 服务中的 $1 个工具（$2 个 Token）超出自定义扩展预算，已从上下文中排除。"
+  },
+  {
+    "regex": "^Exceeded the customization token budget \\(([\\d,]+)\\s*tokens\\) and was excluded from context\\.$",
+    "replacement": "已超出自定义扩展 Token 预算（$1 个 Token），已从上下文中排除。"
+  },
+  {
+    "regex": "^Worked\\s+for\\s+(\\d+)\\s*d\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m$",
+    "replacement": "已工作 $1 天 $2 小时 $3 分钟"
+  },
+  {
+    "regex": "^Stopped\\s+after\\s+(\\d+)\\s*d\\s+(\\d+)\\s*h\\s+(\\d+)\\s*m$",
+    "replacement": "在 $1 天 $2 小时 $3 分钟后停止"
+  },
+  {
+    "regex": "^Send\\s+feedback\\s+as\\s+(.+)$",
+    "replacement": "以 $1 身份发送反馈"
+  },
+  {
+    "regex": "^Branch\\s+([a-zA-Z0-9_\\-\\.\\/]+)$",
+    "replacement": "分支 $1"
+  },
+  {
+    "regex": "^All changes since\\s+(.+)$",
+    "replacement": "自 $1 以来的全部更改"
+  },
+  {
+    "regex": "^(\\d+)\\s+commits?\\s+to\\s+push$",
+    "replacement": "$1 个待推送的提交"
+  },
+  {
+    "regex": "^(\\d+)\\s+commits?\\s+to\\s+pull$",
+    "replacement": "$1 个待拉取的提交"
+  },
+  {
+    "regex": "^Send\\s+[mM]essage\\s+(Enter|Return|Ctrl\\+Enter|Cmd\\+Enter|↵)$",
+    "replacement": "发送消息 $1"
+  },
+  {
+    "regex": "^Send\\s+[mM]essage\\s+\\((Enter|Return|Ctrl\\+Enter|Cmd\\+Enter|↵)\\)$",
+    "replacement": "发送消息 ($1)"
+  },
+  {
+    "regex": "^Playback speed ([0-9.]+)x$",
+    "replacement": "播放倍速 $1x"
+  },
+  {
+    "regex": "^Zoom (\\d+)%, reset to fit$",
+    "replacement": "缩放 $1%，点击重置为适应屏幕"
+  },
+  {
+    "regex": "^Enlarged media:\\s*(.+)$",
+    "replacement": "放大查看媒体：$1"
+  },
+  {
+    "regex": "^Fix with Agent:\\s*(.+)$",
+    "replacement": "使用智能体修复：$1"
+  },
+  {
+    "regex": "^Error restarting (.+?):\\s*(.+)$",
+    "replacement": "重启 $1 时出错：$2"
+  },
+  {
+    "regex": "^Zipping\\s+(.+?)(?:…|\\.\\.\\.)?$",
+    "replacement": "正在压缩 $1…"
+  },
+  {
+    "regex": "^Could not attach folder \"(.+?)\":\\s*Folder is empty$",
+    "replacement": "无法附加文件夹“$1”：文件夹为空"
+  },
+  {
+    "regex": "^Could not attach folder \"(.+?)\":\\s*Folder has more than 1000 files$",
+    "replacement": "无法附加文件夹“$1”：文件夹包含超过 1000 个文件"
+  },
+  {
+    "regex": "^Could not attach folder \"(.+?)\":\\s*Folder is larger than 20MB$",
+    "replacement": "无法附加文件夹“$1”：文件夹大小超过 20MB"
+  },
+  {
+    "regex": "^Could not attach folder \"(.+?)\":\\s*(.+)$",
+    "replacement": "无法附加文件夹“$1”：$2"
+  },
+  {
+    "regex": "^Could not open folder:\\s*(.+)$",
+    "replacement": "无法打开文件夹：$1"
+  },
+  {
+    "regex": "^Search for \"(.+?)\" in the Marketplace$",
+    "replacement": "在扩展市场中搜索“$1”"
+  },
+  {
+    "regex": "^No plugins found for \"(.+?)\"\\.$",
+    "replacement": "未找到与“$1”相关的插件。"
+  },
+  {
+    "regex": "^(\\d+) matching bundles?$",
+    "replacement": "$1 个匹配的组合包"
+  },
+  {
+    "regex": "^Get Anything Done with\\s+(.+)$",
+    "replacement": "借助 $1 搞定一切"
+  },
+  {
+    "regex": "^Select\\s+(.+?)\\s+Theme$",
+    "replacement": "选择 $1 主题"
+  },
+  {
+    "regex": "^(\\d+(?:\\.\\d+)?)%\\s+left$",
+    "replacement": "剩余 $1%"
+  },
+  {
+    "regex": "^(\\d+)\\s*h\\s+limit$",
+    "replacement": "$1 小时限额"
+  },
+  {
+    "regex": "^(\\d+)\\s*d\\s+limit$",
+    "replacement": "$1 天限额"
+  },
+  {
+    "regex": "^(\\d+)\\s*m\\s+limit$",
+    "replacement": "$1 分钟限额"
+  },
+  {
+    "regex": "^(\\d+)\\s*s\\s+limit$",
+    "replacement": "$1 秒限额"
+  },
+  {
+    "regex": "^(\\d+)\\s*h\\s+rate\\s+limit$",
+    "replacement": "$1 小时速率限制"
+  },
+  {
+    "regex": "^(\\d+)\\s*d\\s+rate\\s+limit$",
+    "replacement": "$1 天速率限制"
+  }
+]

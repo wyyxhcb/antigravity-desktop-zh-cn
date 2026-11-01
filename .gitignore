@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.asar
+*.asar.*
+.antigravity-zh-cn*
+*.tmp
+.env
+.env.*
