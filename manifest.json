@@ -1,12 +1,25 @@
 {
   "name": "antigravity-desktop-zh-cn",
   "displayName": "Antigravity 桌面版简体中文语言包",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "locale": "zh-CN",
   "platform": "win32",
   "target": "Antigravity desktop",
-  "supportedAppVersions": ["2.28.1", "2.28.2"],
-  "upstreamPreloadSha256": "1b702d07b8415afdb41d27d62515fa88ce91d31dbc15e9dc6cc7ae80dddb0c7b",
+  "supportedAppVersions": ["2.28.1", "2.28.2", "2.29.0"],
+  "compatibility": {
+    "2.28.1": {
+      "preloadSha256": "1b702d07b8415afdb41d27d62515fa88ce91d31dbc15e9dc6cc7ae80dddb0c7b",
+      "nativePatches": "native-patches.json"
+    },
+    "2.28.2": {
+      "preloadSha256": "1b702d07b8415afdb41d27d62515fa88ce91d31dbc15e9dc6cc7ae80dddb0c7b",
+      "nativePatches": "native-patches.json"
+    },
+    "2.29.0": {
+      "preloadSha256": "2f4348c24fa6feeba6fef81644603304667b43a446b3887370781e90ec37ca2c",
+      "nativePatches": "native-patches-2.29.0.json"
+    }
+  },
   "kind": "reversible-local-patch",
   "networkAccess": false,
   "official": false

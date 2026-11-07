@@ -1,5 +1,173 @@
 [
   {
+    "regex": "^(.{0,500}?)\\ download\\ progress$",
+    "replacement": "$1 下载进度"
+  },
+  {
+    "regex": "^Show\\ (.{0,500}?)\\ in\\ folder$",
+    "replacement": "在文件夹中显示 $1"
+  },
+  {
+    "regex": "^Cancel\\ (.{0,500}?)$",
+    "replacement": "取消 $1"
+  },
+  {
+    "regex": "^Remove\\ (.{0,500}?)\\ from\\ list$",
+    "replacement": "从列表中移除 $1"
+  },
+  {
+    "regex": "^Give\\ each\\ Best\\ of\\ N\\ fork\\ a\\ full\\ clone\\ of\\ your\\ workspace,\\ including\\ its\\ local\\ commit\\ history\\.\\ Choosing\\ a\\ winner\\ then\\ gives\\ your\\ workspace\\ that\\ fork's\\ state,\\ so\\ the\\ commits\\ it\\ made\\ are\\ kept\\.\\ Forks\\ take\\ longer\\ to\\ create\\ than\\ the\\ default\\ CitC\\ clone\\.(.{0,500}?)$",
+    "replacement": "为每个多方案择优分支完整克隆工作区，包括本地提交历史。选定胜出方案后，工作区会采用该分支的状态并保留其提交。创建完整分支比默认 CitC 克隆耗时更长。$1"
+  },
+  {
+    "regex": "^Give\\ each\\ Best\\ of\\ N\\ fork\\ its\\ own\\ clone\\ of\\ your\\ Git\\ repository\\ instead\\ of\\ a\\ copy\\-on\\-write\\ overlay\\.\\ Each\\ fork\\ is\\ then\\ a\\ real\\ repository,\\ so\\ commits\\ it\\ makes\\ are\\ kept\\ when\\ you\\ choose\\ it\\ as\\ the\\ winner\\.\\ Forks\\ take\\ longer\\ to\\ create,\\ and\\ the\\ wait\\ grows\\ with\\ the\\ size\\ of\\ your\\ repository\\.(.{0,500}?)$",
+    "replacement": "为每个多方案择优分支单独克隆 Git 仓库，而非使用写时复制覆盖层。每个分支都是实际仓库，选定方案后会保留其提交。仓库越大，创建分支所需时间越长。$1"
+  },
+  {
+    "regex": "^Stop\\ (.{0,500}?)\\ selected$",
+    "replacement": "停止选中的 $1 项"
+  },
+  {
+    "regex": "^Stop\\ (.{0,500}?)\\?$",
+    "replacement": "停止 $1？"
+  },
+  {
+    "regex": "^Stop\\ (.{0,500}?)$",
+    "replacement": "停止 $1"
+  },
+  {
+    "regex": "^Choose\\ (.{0,500}?)'s\\ Voice$",
+    "replacement": "选择 $1 的声音"
+  },
+  {
+    "regex": "^Failed\\ to\\ delete\\ recordings:\\ (.{0,500}?)$",
+    "replacement": "无法删除录音：$1"
+  },
+  {
+    "regex": "^This\\ deletes\\ (.{0,500}?)\\ \\((.{0,500}?)\\)\\ from\\ your\\ machine\\.\\ You\\ can't\\ undo\\ this\\.$",
+    "replacement": "这会从你的电脑中删除 $1（$2），此操作无法撤销。"
+  },
+  {
+    "regex": "^Failed\\ to\\ save\\ cloud\\ permission\\ settings:\\ (.{0,500}?)$",
+    "replacement": "无法保存云端权限设置：$1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ \\(Remote\\)$",
+    "replacement": "$1（远程）"
+  },
+  {
+    "regex": "^Sign\\ in\\ to\\ (.{0,500}?)\\ remotely$",
+    "replacement": "远程登录 $1"
+  },
+  {
+    "regex": "^Connect\\ (.{0,500}?)$",
+    "replacement": "连接 $1"
+  },
+  {
+    "regex": "^Open\\ (.{0,500}?),\\ (.{0,500}?)$",
+    "replacement": "打开 $1，$2"
+  },
+  {
+    "regex": "^(.{0,500}?)\\ lines\\ added,\\ (.{0,500}?)\\ lines\\ removed$",
+    "replacement": "新增 $1 行，删除 $2 行"
+  },
+  {
+    "regex": "^Show\\ (.{0,500}?)\\ earlier\\ steps$",
+    "replacement": "显示 $1 个较早步骤"
+  },
+  {
+    "regex": "^Show\\ (.{0,500}?)\\ more\\ subagent(.{0,500}?)$",
+    "replacement": "再显示 $1 个子智能体"
+  },
+  {
+    "regex": "^Loading\\ (.{0,500}?)\\.\\.\\.$",
+    "replacement": "正在加载 $1…"
+  },
+  {
+    "regex": "^No\\ remote\\ (.{0,500}?)$",
+    "replacement": "没有远程 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)%\\ of\\ the\\ context\\ window\\ used$",
+    "replacement": "已使用上下文窗口的 $1%"
+  },
+  {
+    "regex": "^No\\ connectors\\ match\\ “(.{0,500}?)”$",
+    "replacement": "没有与“$1”匹配的连接器"
+  },
+  {
+    "regex": "^Detached\\ at\\ (.{0,500}?)$",
+    "replacement": "已分离至 $1"
+  },
+  {
+    "regex": "^Branch,\\ current:\\ (.{0,500}?)(.{0,500}?)$",
+    "replacement": "分支，当前：$1$2"
+  },
+  {
+    "regex": "^System\\ default\\ \\((.{0,500}?)\\)$",
+    "replacement": "系统默认（$1）"
+  },
+  {
+    "regex": "^(.{0,500}?)\\.\\ Switch\\ microphone\\.$",
+    "replacement": "$1。切换麦克风。"
+  },
+  {
+    "regex": "^(.{0,500}?)\\.\\ Switch\\ mic$",
+    "replacement": "$1。切换麦克风"
+  },
+  {
+    "regex": "^Voice\\ Speed,\\ (.{0,500}?)$",
+    "replacement": "语速，$1"
+  },
+  {
+    "regex": "^Voice\\ speed,\\ (.{0,500}?)$",
+    "replacement": "语速，$1"
+  },
+  {
+    "regex": "^Run\\ (.{0,500}?)\\ now$",
+    "replacement": "立即运行 $1"
+  },
+  {
+    "regex": "^(.{0,500}?)\\.\\ Show\\ in\\ main\\ conversation$",
+    "replacement": "$1。在主对话中显示"
+  },
+  {
+    "regex": "^Search\\ Google\\ for\\ \"(.{0,500}?)\"$",
+    "replacement": "在 Google 中搜索“$1”"
+  },
+  {
+    "regex": "^Keep:\\ (.{0,500}?)$",
+    "replacement": "保留：$1"
+  },
+  {
+    "regex": "^See\\ (.{0,500}?):\\ (.{0,500}?)$",
+    "replacement": "查看 $1：$2"
+  },
+  {
+    "regex": "^Running\\ for\\ (.{0,500}?)$",
+    "replacement": "已运行 $1"
+  },
+  {
+    "regex": "^Restart\\ (.{0,500}?)$",
+    "replacement": "重新启动 $1"
+  },
+  {
+    "regex": "^Up\\ (.{0,500}?)$",
+    "replacement": "运行时长 $1"
+  },
+  {
+    "regex": "^Step\\ (.{0,500}?)\\ of\\ (.{0,500}?)$",
+    "replacement": "第 $1 步，共 $2 步"
+  },
+  {
+    "regex": "^Create\\ (.{0,500}?)$",
+    "replacement": "创建 $1"
+  },
+  {
+    "regex": "^See\\ \\[(.{0,500}?)\\]\\((.{0,500}?)\\)\\.$",
+    "replacement": "参见 [$1]($2)。"
+  },
+  {
     "regex": "^(\\d+)s$",
     "replacement": "$1 秒"
   },

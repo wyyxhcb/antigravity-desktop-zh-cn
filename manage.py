@@ -103,6 +103,20 @@ def load_manifest():
     return json.loads((ROOT / 'manifest.json').read_text('utf-8'))
 
 
+def compatibility_profile(manifest, version):
+    profile = manifest.get('compatibility', {}).get(version)
+    if version not in manifest['supportedAppVersions'] or not isinstance(profile, dict):
+        raise PackError(f'当前程序版本为 {version}；本语言包仅适配 ' + ', '.join(manifest['supportedAppVersions']) + '，未修改任何文件。')
+    return profile
+
+
+def load_native_patches(manifest, version):
+    filename = compatibility_profile(manifest, version)['nativePatches']
+    if not isinstance(filename, str) or Path(filename).name != filename or not filename.endswith('.json'):
+        raise PackError('版本适配文件路径不合法。')
+    return json.loads((ROOT / filename).read_text('utf-8'))
+
+
 def render_payload():
     source = (ROOT / 'renderer.js').read_text('utf-8')
     trusted = json.loads((ROOT / 'source-text.json').read_text('utf-8'))
@@ -132,12 +146,13 @@ def build(original):
     header, payload = parse_archive(original)
     package = json.loads(get_file(header, payload, 'package.json'))
     version = package.get('version')
-    if package.get('name') != 'antigravity' or version not in manifest['supportedAppVersions']:
-        raise PackError(f'当前程序版本为 {version}；本语言包仅适配 ' + ', '.join(manifest['supportedAppVersions']) + '，未修改任何文件。')
+    if package.get('name') != 'antigravity':
+        raise PackError('此资源不属于 Antigravity 桌面版。')
+    profile = compatibility_profile(manifest, version)
     preload = get_file(header, payload, 'dist/preload.js')
     if MARKER in preload:
         raise PackError('该程序已包含中文补丁，请先检查状态或恢复英文。')
-    if digest(preload) != manifest['upstreamPreloadSha256']:
+    if digest(preload) != profile['preloadSha256']:
         raise PackError('界面加载文件与已验证版本不同；为避免覆盖其他修改，已停止安装。')
     menu_hook = b"showContextMenu: (items) => electron_1.ipcRenderer.invoke('window:show-context-menu', items),"
     translated_hook = b"showContextMenu: (items) => electron_1.ipcRenderer.invoke('window:show-context-menu', agZh.menu(items)),"
@@ -145,7 +160,7 @@ def build(original):
         raise PackError('无法确认原生右键菜单接口，未修改程序。')
     replacement = b'"use strict";\n' + MARKER + b'\n' + render_localizer() + b'\n' + preload.replace(menu_hook, translated_hook) + b'\n' + render_payload() + b'\n'
     patched = replace_file(original, 'dist/preload.js', replacement)
-    native_patches = json.loads((ROOT / 'native-patches.json').read_text('utf-8'))
+    native_patches = load_native_patches(manifest, version)
     expected_files = {'dist/preload.js': replacement}
     for name, change in native_patches.items():
         native_source = get_file(header, payload, name)
@@ -347,6 +362,7 @@ def status(folder):
     print('程序版本：' + str(version))
     print('语言包：' + ('已安装' if MARKER in preload else '未安装'))
     if state:
+        print('语言包版本：' + str(state.get('packVersion', '未知')))
         print('安装记录：' + ('与当前程序一致' if digest(data) == state['patchedSha256'] else '程序已变化，请运行恢复英文整理记录'))
     print('支持版本：' + ', '.join(load_manifest()['supportedAppVersions']))
 
