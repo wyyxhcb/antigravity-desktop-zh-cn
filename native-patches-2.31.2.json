@@ -1,0 +1,187 @@
+{
+  "dist/main.js": {
+    "sha256": "0d297f7b38f73777e61fdcde103f026b1ae69af91e37edc937c9b37d5fe73d6e",
+    "replacements": [
+      {
+        "before": "title: 'WSL distro not found'",
+        "after": "title: \"未找到 WSL 发行版\"",
+        "count": 1
+      },
+      {
+        "before": "detail: 'Antigravity opened on Windows instead.'",
+        "after": "detail: \"Antigravity 已改为在 Windows 本地打开。\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'New Window'",
+        "after": "label: \"新建窗口\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'No agents running'",
+        "after": "label: \"无正在运行的智能体\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'Quit'",
+        "after": "label: \"退出\"",
+        "count": 1
+      },
+      {
+        "before": "title: 'Confirm Quit'",
+        "after": "title: \"确认退出\"",
+        "count": 1
+      },
+      {
+        "before": "message: 'Are you sure you want to quit?'",
+        "after": "message: \"您确定要退出吗？\"",
+        "count": 1
+      },
+      {
+        "before": "detail: 'There may be agents or background tasks running.'",
+        "after": "detail: \"当前可能仍有正在运行中的智能体或后台任务。\"",
+        "count": 1
+      },
+      {
+        "before": "buttons: ['Cancel', 'Quit']",
+        "after": "buttons: [\"取消\", \"退出\"]",
+        "count": 1
+      },
+      {
+        "before": "label: `Open ${electron_1.app.getName()}`",
+        "after": "label: `打开 ${electron_1.app.getName()}`",
+        "count": 1
+      }
+    ]
+  },
+  "dist/tray.js": {
+    "sha256": "6c6b0968b45a1c7088e459657d57a9efd72d3733614349095f17b6ee94b47135",
+    "replacements": [
+      {
+        "before": "countItem.label =\n                (count > 0 ? `${count}` : 'No') +\n                    ' agent' +\n                    (count === 1 ? '' : 's') +\n                    ' running';",
+        "after": "countItem.label = count > 0 ? `${count} 个智能体正在运行` : '没有正在运行的智能体';",
+        "count": 1
+      }
+    ]
+  },
+  "dist/menu.js": {
+    "sha256": "34ce3fabe919e74eae9034fa1ee32c3202f3c40b2f5ffa642bee23a0958a5820",
+    "replacements": [
+      {
+        "before": "label: 'New Window'",
+        "after": "label: \"新建窗口\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'Docs'",
+        "after": "label: \"使用文档\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'Connect to WSL'",
+        "after": "label: \"连接到 WSL\"",
+        "count": 1
+      },
+      {
+        "before": "label: 'Reopen Locally'",
+        "after": "label: \"在本地重新打开\"",
+        "count": 1
+      }
+    ]
+  },
+  "dist/ipcHandlers.js": {
+    "sha256": "e45b442a3e8a55e521ead048bb858a1bbe8c282e1a5f9d7fab9366b843a44ead",
+    "replacements": [
+      {
+        "before": "message: 'Folder is on the Windows filesystem'",
+        "after": "message: \"文件夹位于 Windows 文件系统上\"",
+        "count": 1
+      },
+      {
+        "before": "title: 'Open workspace'",
+        "after": "title: \"打开工作区\"",
+        "count": 1
+      },
+      {
+        "before": "title: 'Open workspaces'",
+        "after": "title: \"打开多个工作区\"",
+        "count": 1
+      }
+    ]
+  },
+  "dist/updater.js": {
+    "sha256": "ef38da806d1db759ff94ec8b1181f057440150cedbab7992b633df8933951e04",
+    "replacements": [
+      {
+        "before": "title: 'Check for Updates'",
+        "after": "title: \"检查更新\"",
+        "count": 1
+      },
+      {
+        "before": "message: 'No updates available'",
+        "after": "message: \"暂无可用更新\"",
+        "count": 1
+      }
+    ]
+  },
+  "dist/provisionSplash.js": {
+    "sha256": "737f40f02130440a9ec9a3fed83c2e62290029aece6d0ad558136fa510c45f35",
+    "replacements": [
+      {
+        "before": "Setting up WSL: ${escapeHtml(distro)}",
+        "after": "正在配置 WSL：${escapeHtml(distro)}",
+        "count": 1
+      }
+    ]
+  },
+  "dist/ideInstall/wizardHtml.js": {
+    "sha256": "5eff5a777d5cfc26877ee1ea7889310c2afe0aa66d596f87f9bdc57ed41264b9",
+    "replacements": [
+      {
+        "before": "<html lang=\"en\">",
+        "after": "<html lang=\"zh-CN\">",
+        "count": 1
+      },
+      {
+        "before": "<title>Welcome to Antigravity</title>",
+        "after": "<title>欢迎使用 Antigravity</title>",
+        "count": 1
+      },
+      {
+        "before": "Setting up…",
+        "after": "正在配置…",
+        "count": 1
+      },
+      {
+        "before": "Welcome to the new Antigravity!",
+        "after": "欢迎使用新版 Antigravity！",
+        "count": 1
+      },
+      {
+        "before": "Antigravity has been redesigned to put agents first with new capabilities. If you'd still like a code editor, you can download it as a separate app named ",
+        "after": "Antigravity 已重新设计，以智能体为核心并带来更多功能。如果仍需要代码编辑器，可以单独下载应用 ",
+        "count": 1
+      },
+      {
+        "before": ".</p>",
+        "after": "。</p>",
+        "count": 1
+      },
+      {
+        "before": "Download the Antigravity IDE",
+        "after": "下载 Antigravity IDE",
+        "count": 1
+      },
+      {
+        "before": "Explore the new Antigravity",
+        "after": "探索新版 Antigravity",
+        "count": 1
+      },
+      {
+        "before": "alt=\"Antigravity Icon\"",
+        "after": "alt=\"Antigravity 图标\"",
+        "count": 1
+      }
+    ]
+  }
+}

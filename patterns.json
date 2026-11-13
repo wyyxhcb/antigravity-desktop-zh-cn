@@ -1,5 +1,9 @@
 [
   {
+    "regex": "^Hi (.+), what can we get done today\\?$",
+    "replacement": "你好 $1，今天想完成什么？"
+  },
+  {
     "regex": "^(.{0,500}?)\\ download\\ progress$",
     "replacement": "$1 下载进度"
   },
